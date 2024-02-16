@@ -6,13 +6,22 @@
   "scripts": {
     "start": "node ./src/server.js",
     "pretest": "eslint ./src --fix",
-    "test": "echo \"Tests complete\""
+    "test": "echo \"Tests complete\"",
+    "nodemon": "nodemon --watch ./src ./src/server.js",
+    "buildBundle": "webpack",
+    "watchBundle": "webpack watch"
   },
   "author": "Austin Willoughby",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.29.1"
+    "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.0.3",
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "underscore": "^1.13.6"
   }
 }
